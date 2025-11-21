@@ -1,0 +1,490 @@
+                           AMIGA TANX
+                          ~~~~~~~~~~~~
+                     Produced by Gary Roberts.
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          Version 1.0 
+                         ~~~~~~~~~~~~~
+                 Written for Amiga Computing. 1991
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    
+ 
+ 
+                     Tanks! a Short Overview.
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ Do you remember that great game called "TANKS !" which appeared
+on several machines many years ago.? You don't.?,where have you been
+all this time.? 
+ Many an hour was had by kids and adults alike playing this simple
+game at college and at work. Its one of those games, you either love
+it or hate it.
+
+ I am afraid I don't know who created the original Tanks,so I can not
+give them any credit. ( If somebody knows who it was then please contact
+me, I can then give them credit.! )
+
+ Anyway Tanks is a 2 player game only ( Although I have known a few
+people who play in on their own! ),each player is given a tank to
+control on a landscape,the idea is to take it in turns to shoot at your
+opponent. ( See.? I said it was simple ). You have control over the
+angle of the tanks barrel and the velocity behind the shot.
+ The winner is the person who scores a direct hit on their opponents
+tank. ( Cooo, now there is a surprise.)  
+ Thats the basic idea behind the original Tanks game, now here
+is my version.
+
+
+                             Amiga Tanx.
+                            ~~~~~~~~~~~~~
+ Amiga Tanx follows the same lines as the original game,but with just
+a few variations.
+
+    a) Randomly generated Landscapes.
+    b) Two main types of Landscapes.
+    c) Variable gravity.
+    d) Variable wind strength and direction.
+    e) Targets to hit.
+    f) Objects which affect the flight of the tanks shot.
+    g) Full Stereo Sound.
+    h) 50 frames a second screen update.
+    i) Parallax scrolled play area.
+    j) Over 100 colours on screen. ( Honest ! )
+    
+ I could go on ,but I won't.
+
+ 
+                            Starting Tanx
+                           ~~~~~~~~~~~~~~~
+ Pretty straight forward this bit.
+ The Tanx game takes up around 400k of chip ram,so if you don't
+have 1 meg chip ram or own an amiga A3000,you will have to close
+all windows and make sure you have at least 400k of chip ram free.
+
+ NOTE: if you only have a 512k amiga,then tanx will not run from
+Workbench. You will have to boot the disk and run Tanx from the CLI
+
+ Tanx can only be run from the CLI,but due a to a lovely program
+called ICONX, you can run it from Workbench.
+ To run Amiga Tanx,open up the Tanx window and double click on the
+Tanx Icon. A CLI window will appear and Tanx will proceed to run.
+ If any errors occur then a nice message will appear on screen.
+ 
+ Tanx can be run from the CLI alone.To do this you must make the "Tanx!"
+directory the current directory before running.
+
+ Eg.
+      CD df0:Tanx!	- To change directory.
+      
+ If Tanx cannot find or load the file "Tanx-Title.Dat" then it will not run.
+ It looks for "Tanx-Title.Dat" in the current directory.
+ 
+ If you wish to transfer the Tanx Game to Hard disk or some other 
+media,then you require the following files from the Tanx! directory.
+
+       Tanx		( And the associated icon files if you wish )
+       Tanx-Title.Dat
+
+   
+ "Tanx" is the main program,while "Tanx-Title.Dat" is the title image.
+As long as both files are in the same directory, Tanx will run.
+ So you can transfer the game to Hard disk or some other media.
+        
+ 
+                       Playing The Game
+                      ~~~~~~~~~~~~~~~~~~
+
+ When the Tanx title appears, press the left mouse button, after a few
+seconds the Main Options Screen will appear.
+
+ From this screen you can change many game parameters.
+ The parameters will be explained later on.
+ 
+ To Play a game simply move the mouse pointer and click on the PLAY
+Icon situated in the top right of the screen.
+
+ After a few seconds you will be shown the Landscape on which the 
+battle is about to take place.
+ ( The Landscape is about 2 screens wide. )
+ 
+ A control panel,then drops down from the top of the screen.
+From here the current player can control his/her tank and scroll
+around the landscape.
+
+ The current Players name is displayed and their tank is brought
+into view. 
+ The following Icons are displayed in the panel.
+ 
+ Velocity      - Represented by bar bells. ( What else? ) 
+                 Clicking on the arrows underneath will
+                 alter the velocity of the players shot.
+                 If you hold the left mouse button down then
+                 the velocity will rise slowly,hold down both
+                 left and right mouse buttons and the velocity
+                 will rise quickly.
+                 Velocity can be in the range of 0 to 199.
+ 
+ Angle         - Represented by a 90 degree angle.
+                 Clicking on the arrows underneath will
+                 alter the angle of the tanks gun barrel.
+                 Click with the left button alone and the value
+                 will change slowly.Hold down both mouse buttons
+                 and things will wizz along.
+                 The angles are in degrees.
+                 Values are between -90 and 150
+                 Negative angles will fire the bullets downwards.
+                 + 90 degrees will fire the bullets straight up.
+                                  
+ Fire          - Represented by a rocket on a red button.
+                 If you are happy with the angle,velocity and tanks
+                 position,then click on this to fire your bullet!
+ 	
+ Quit          - Represented by a white flag.
+                 Clicking on this during any point in play will
+                 quit the current game and return to the options
+                 screen.
+ 
+ Scroll Land   - Represented by a small landscape and tank.
+                 Click on the arrows will scroll the Landscape
+                 Left and right, and up and down. this will enable
+                 you to pick out your target ( The other players
+                 tank ).
+                 Pressing the left mouse button will scroll slowly.
+                 Hold down both buttons and it will wizz along.	
+ 
+ Move Tank     - Represented by a Tank ( Suprising huh.? )
+                 Clicking on the arrows below the icon will move
+                 your tank.
+                 Tanks can only move on their flat plain.
+                 They can not go up or down hills or ride over
+                 craters.
+
+ When you fire the bullets, they will fly given your angle and
+velocity. The bullets are accurately calculated using
+a projectile forumla,so they will act as if in real life.
+
+ Each player takes it in turn to fire a shot. the first player to
+hit their opponents tank wins.! 
+
+ After a game has been won. A status screen is displayed.
+ A tally of the games won by each player is displayed.
+ 
+ From the Status screen you can play another game with the current
+ parameters or you may exit to the Main Options screen to alter 
+ the parameters. -  See Next section.
+
+ The current tally of the games won by each player is only
+ cleared when you change the players name from the main options
+ screen.   - See next section.
+ 
+
+                           Game Parameters.
+                          ~~~~~~~~~~~~~~~~~~
+ As you may have seen from the Main Options screen there are lots
+of parameters that you can change.
+
+               A) Wind Strength.
+               B) Wind Direction.
+               C) Gravity Strength.
+               D) Landscape generation.
+               E) Objects.
+               F) Sound.
+
+Also on the Main options screen you will find the following Icons.
+
+ ABOUT    -   The current version of the game and who wrote it!
+
+ QUIT     -   Quit the game. 
+ 
+ PLAYER1  -  
+ PLAYER2  -   The two player icons at the top left of the
+              main options screen enable you to alter the 
+              players names.Simply click on the icon under the
+              players name. You may type in 3 letters from the
+              keyboard or move your mouse left/right and click to
+              leave a character.
+
+ PLAY     -   Play a game with the selected parameters.
+  
+ I will run through each of the parameters and explain 
+what they all do!
+ To operate any of the options,simply move the mouse pointer
+over the switches ( little boxes with black or red lights in them )
+and press the left mouse button.
+
+
+                       A) Wind Strength.
+                      ~~~~~~~~~~~~~~~~~~~
+ Pretty obvious this one. You can introduce wind affect
+into the game. Wind affects the flight of the bullets and
+makes the game a little harder to play.
+ The wind strength and direction is displayed during the game,
+at the bottom of the screen. The flag denotes the direction,whilst
+the meter and number ( from 0-9 ) denotes the strength.
+
+ The options under Wind Strength are as follows.
+ 
+  1) None   -     No wind affect at all. The default option.
+  
+  2) Light  -     Light wind.A small breeze blows and has a 
+                  small affect on the bullets flight.
+
+  3) Medium -     A brisk wind blows across the landscape.
+                  This wind noticeably affects the bullets
+                  flight.
+                  
+  4) Strong -     Definitely gale force conditions now.
+                  The wind is very strong and the bullets
+                  are very much affected by the wind.
+                  
+  5) Random - 	  The wind strength is randomly chosen
+                  during the game.After each players shot
+                  the wind can change strength with this option.                 
+                  
+ NOTE: With options 2-4 the wind strength is chosen at the
+       beginning of a game and does NOT change throughout the
+       game.
+       With option 5. The wind strength is randomly chosen,
+       and DOES change during a game.So watch the wind meter
+       before taking a shot.!!!
+
+          
+                         B) Wind Direction
+                        ~~~~~~~~~~~~~~~~~~~
+ This option rightly alters how the wind direction is generated.
+ 
+ 1) Same.   -     The default option.
+                  The wind direction is chosen randomly at the start
+                  of each game and does not change during that game.
+  
+ 2) Random  -     The wind direction is chosen randomly at the start
+                  of each game,but it can change randomly during a game
+                  so watch out!!!                  
+     
+
+
+                        C) Gravity Strength
+                       ~~~~~~~~~~~~~~~~~~~~~                   
+
+ No prizes for guessing what this does.
+ Different gravity strengths require different tactics.
+
+ All gravity is chosen at the start of each game,and does NOT
+ change during the game.
+   
+  1) Light  -     Light Gravity,makes the bullets feel very light.
+                  When fired they will tend to float along.
+                 
+                    
+  2) Medium -     This is the default option and is equivalent to
+                  the earths gravity.
+   
+  3) Strong -     The bullets feel very heavy and drop like an
+                  elephant wearing several lead anvils as ear rings.
+
+  4) Random -     The Gravity is randomly chosen from the above.
+
+
+                     D) Landscape Generation.
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~      
+ There are two types of landscapes. Mountains and Foothills.
+ For each type the landscape is randomly generated,so no two
+ landscapes will be the same.
+
+ During landscape and object creation,a small message appears
+on screen informing you. - See the Known Bugs Section.!!! 
+
+  1) Mountains-   Steep mountains with large valleys.
+                  This makes hitting tanks quite tricky.
+                  Lots of cover.
+
+  2) Foot Hills-  Shallow valleys with small hills.
+                  Tanks are easily spotted and not to difficult
+                  to get at.
+                                   
+  3) Random	  A Totally random landscape is generated.
+                  Watch out!! some bizarre shapes can be
+                  generated with this option.
+
+
+                  
+                         E) Objects.
+                        ~~~~~~~~~~~~~   
+
+ These are not for the faint hearted.!
+ 4 types of objects can be placed on the landscape.
+
+ All the objects are placed randomly on the landscape.
+ 
+ NOTE: See the Known Bugs section !!!
+       
+       1) Targets. - These can be destroyed,if you hit a target
+                     you will get a free shot the next round.
+                              
+       2) Fans     - These can not be destroyed.
+                     These blow ( What else do fans do.? )
+                     very hard in the direction they face.
+                     If the bullets fly into range of one of these
+                     expect strange results.!
+                     A fans wind strength is usually stronger than
+                     a strong wind. A fans strength is randomly
+                     chosen.
+
+       3) Pushers  - These strange objects look like pulsating
+                     red pyramids. ( With an arrow going up and down)
+                     When ever a bullet flies over them it will be
+                     pushed upwards very hard.
+                     
+       4) Pullers -  These look like a pair of jaws opening and closing.
+                     These have the opposite affect of the Pushers.
+                     When ever bullets fly over them they will be pulled
+                     down very sharply.
+                     
+                     
+                            F) Sound
+                           ~~~~~~~~~~
+ If you wish you may switch off all sounds during the game.
+ All the sounds are digitised and played in full stereo,so why
+ should you want to switch the sound off.?
+
+ 
+                    Some other things I should mention,
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ No two games of Tanx will be the same. Most of the parameters
+I use to generate landscapes and object positions are randomized
+as much as possible. ( This was right pain debugging the code! )
+
+ The tanks are randomly positioned on the landscape, players are
+randomly assigned tanks to use.The player that goes first is also
+randomly chosen. So don't complain if your mate always goes first!!
+
+ Tanks are limited to moving on their "flat plain" only,they can not
+go up mountains or over craters.
+ But you are able to "Tunnel" your way into a nearby mountain.
+ Simple position your tank about a tanks width from the mountain or 
+hill,set your angle to -4 or -5 and velocity to over 100.
+ The explosion of the bullets hitting the land,will remove a hefty
+chunk of land.repeat this a few times and you will have created
+a tunnel.Drive your tank in for cover!! But your tank must be able to
+fire out of it!  
+
+ Try setting the landscape to Foothills,wind to strong,gravity
+to light. Fun ain't it.? Be careful not to shoot yourself.!!
+
+ It is best to start of with the default options, no wind,medium
+gravity and no objects. As soon as you find this to easy,introduce
+wind and different gravity strengths.
+
+ Finally try switching on the following and playing for the
+ hardest level.
+ 
+   1) All objects on
+   2) Random Wind strength
+   3) Random Wind Direction
+   4) Random Gravity
+   5) Random Landscape.
+   
+
+    Have fun!!!
+  
+ 
+ Technical Information.
+~~~~~~~~~~~~~~~~~~~~~~~
+
+ Due to the nature of the system and how the game operates,this 
+game does not multitask. Sorry!!!.
+ When you exit the game it will return the system exactly as it
+found it.
+ To achieve the 50 frames a second,The system must be taken over.
+Sorry!
+
+ The actual game runs in low res 320*256 and in full PAL overscan.
+ Screen update is at arcade speed (50 frames a second)
+ 6 bitplanes are used to produce dual playfields. using the copper
+ over 100 colours are displayed on screen.
+ 
+ The options screen and status screens are all in 32 colours.
+ 
+ Full stereo sound is used. Turn up the volume and increase the
+bass to annoy the peeps next door!!
+ Over 100 k is used for digitised sound,280 k of graphic data
+and 20k of code.
+
+ The game was written using an Amiga A500,with A590 Hard drive,3 meg,
+2 drives and monitor.It was written in Assembler using the brilliant
+Hisoft Devpac 2.14 and took about 1 month to write.
+ Dpaint III was used for graphics.
+ Audio Master II was used to digitise the sounds.
+ Pixmate was also used for conversion of IFF images to RAW bitplane
+files.
+ 
+ The game will run on all Amigas,that includes A3000's and
+accelerated Amigas.
+ If the game does not run on your setup,please contact me and
+I will try to fix the problem.
+ If you come across any bugs or have some new ideas for the next
+release again, please contact me.
+
+ My Address.
+     Gary Roberts
+     17 Tudor Close,
+     Birchwood Drive
+     Alderholt
+     Near Fordingbridge
+     HANTS
+     SP6 3LY
+     ENGLAND.
+     
+     or phone me on UK (0425) 657155.
+
+
+ This is Version 1.0 of TANX.
+
+  Thank you for playing it.!
+
+            Gary Roberts 1991.
+            
+
+
+ Known Bugs.
+~~~~~~~~~~~~~
+ The only bug that could occur is during the generation of
+Object Positions on the landscape.
+
+  i.e. You have 1 or more of the object options switched on.
+
+ I have tried to keep the games parameters and randomized as
+possible.This way no two games will be the same.
+
+ The landscape is generated randomly. Several points are generated
+and these joined together to form the land.
+ When it comes to generating the object positions,the program
+sits in a loop.
+ It generates random positions for the objects.It then checks to see
+if the newly generated object positions are actually on land. ( We
+don't want targets floating in the sky now do we.? )
+ If they are not on land then it generates some more random points,
+this loop continues until all object positions are on the land.
+
+ Now in theory,the computer could sit in this loop for ever,generating
+random points which do not lie on the land. ( This has never
+happened during the 2 weeks of play testing ).
+
+ Because of this I have provided an "exit" function. Whilst the
+object positions are being generated,a message appears on screen
+telling you so. You can exit out of this by holding down the
+left mouse button,this will bring you to the Main Options screen.
+( Don't worry the players scores will not be cleared )
+
+ During the 2 weeks of play testing the longest it has taken to 
+generate a landscape with all objects switched on is 11 secs.
+ If it takes longer that say 30 secs to do so,then I suggest you
+exit and try again.
+
+ I do appologise about this,but I think the importance of randomizing
+parameters as much as possible outways the importance of this bug.
+ 
+ I hope this bug does not annoy you.
+
+ Thank you.
+                                                               
